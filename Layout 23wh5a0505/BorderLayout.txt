@@ -1,0 +1,31 @@
+import java.awt.*;    
+import javax.swing.*;    
+public class Border 
+{     
+JFrame jframe;    
+  
+Border()  
+{  
+    
+    jframe = new JFrame();    
+    JButton b1 = new JButton("NORTH");    
+    JButton b2 = new JButton("SOUTH");    
+    JButton b3 = new JButton("EAST");   
+    JButton b4 = new JButton("WEST");    
+    JButton b5 = new JButton("CENTER");  
+     
+    jframe.setLayout(new BorderLayout(20, 15));  
+    jframe.add(b1, BorderLayout.NORTH);    
+    jframe.add(b2, BorderLayout.SOUTH);    
+    jframe.add(b3, BorderLayout.EAST);    
+    jframe.add(b4, BorderLayout.WEST);    
+    jframe.add(b5, BorderLayout.CENTER);    
+    jframe.setSize(300,300);    
+    jframe.setVisible(true);    
+}    
+
+public static void main(String argvs[])   
+{    
+    new Border();    
+}    
+}    
